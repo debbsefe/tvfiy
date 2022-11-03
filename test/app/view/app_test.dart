@@ -7,13 +7,12 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tvfiy/app/app.dart';
-import 'package:tvfiy/counter/counter.dart';
 
 void main() {
   group('App', () {
-    testWidgets('renders CounterPage', (tester) async {
+    testWidgets('renders SplashScreen', (tester) async {
       await tester.pumpWidget(const App());
-      expect(find.byType(CounterPage), findsOneWidget);
+      expect(find.byType(SplashScreen), findsOneWidget);
     });
   });
 }

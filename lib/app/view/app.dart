@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:tvfiy/counter/counter.dart';
+import 'package:tvfiy/app/app.dart';
 import 'package:tvfiy/l10n/l10n.dart';
 
 class App extends StatelessWidget {
@@ -28,7 +28,7 @@ class App extends StatelessWidget {
         GlobalMaterialLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const SplashScreen(),
     );
   }
 }
