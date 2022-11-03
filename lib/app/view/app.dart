@@ -21,6 +21,7 @@ class App extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(
           accentColor: const Color(0xFF13B9FF),
         ),
+        fontFamily: 'DMMono',
       ),
       localizationsDelegates: const [
         AppLocalizations.delegate,
