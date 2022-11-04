@@ -125,3 +125,9 @@ app.*.map.json
 !.idea/codeStyles/
 !.idea/dictionaries/
 !.idea/runConfigurations/
+
+*google-services.json
+*GoogleService-Info-com.mamuseferha.tvfiy.plist
+*GoogleService-Info-com.mamuseferha.tvfiy.dev.plist
+*GoogleService-Info-com.mamuseferha.tvfiy.stg.plist
+*GoogleService-Info.plist
