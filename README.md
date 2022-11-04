@@ -31,7 +31,30 @@ $ flutter run --flavor staging --target lib/main_staging.dart
 $ flutter run --flavor production --target lib/main_production.dart
 ```
 
-_\*Tvfiy works on iOS, Android, Web, and Windows._
+_\*Tvfiy works on iOS, Android._
+
+---
+
+## Setting up Firebase 
+
+To set up firebase for this project you need to get the download the `google-services.json` and `GoogleService-Info.plist` files from the firebase project for android and ios respectively.
+
+*ANDROID*
+
+1. Download the `google-services.json` from the console for each app flavor - `development` `staging` and `production`
+2. Add them to `android/app/src` folder, under each folder name. dev goes under `development` folder, staging goes under `staging` folder, and production stays under `src`
+3. And that's all
+
+*iOS*
+
+1. Download the `GoogleService-Info.plist` from the console for each app flavor - `development` `staging` and `production`
+2. Rename each of them like so `GoogleService-Info-bundle-id.plist`. 
+3. production rename it as:  `GoogleService-Info-com.mamuseferha.tvfiy.plist`.
+4. staging rename it as: `GoogleService-Info-com.mamuseferha.tvfiy.stg.plist`.
+5. development rename it as: `GoogleService-Info-com.mamuseferha.tvfiy.dev.plist`.
+6. Now create a folder under `ios/Runner`, name it Firebase and add all three files to the folder. 
+7. And that's all
+
 
 ---
 
