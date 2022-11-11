@@ -12,7 +12,7 @@ final routerProvider = Provider<GoRouter>((ref) {
 class RouterNotifier extends ChangeNotifier {
   final routes = [
     GoRoute(
-      path: '/', //TODO: change splash and main screen
+      path: '/', // TODO(a-oboh): change splash and main screen
       builder: (BuildContext context, GoRouterState state) {
         return const SplashScreen();
       },
