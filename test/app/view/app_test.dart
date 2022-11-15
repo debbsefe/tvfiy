@@ -7,8 +7,9 @@ void main() {
   group('App', () {
     testWidgets('renders SplashScreen', (tester) async {
       await tester.pumpWidget(
-        App(
+        UncontrolledProviderScope(
           container: container,
+          child: const App(),
         ),
       );
       expect(find.byType(SplashScreen), findsOneWidget);
